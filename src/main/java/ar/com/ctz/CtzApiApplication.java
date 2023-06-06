@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class QrApiApplication {
+public class CtzApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(QrApiApplication.class, args);
+		SpringApplication.run(CtzApiApplication.class, args);
 	}
 
 }
