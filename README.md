@@ -25,7 +25,7 @@ mvn spring-boot:run
 
 ```
 
-server port is configured to 9090 which can be changed in application.properties file
+server port is configured to 9095 which can be changed in application.properties file
 
 Go to the below url to view swagger-ui (API docs)
 
