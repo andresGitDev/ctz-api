@@ -18,7 +18,7 @@ import ar.com.ctz.shared.AbstractResponseExtractor;
 @Component
 public class CtzExtractor extends AbstractResponseExtractor<Dollar> {
 
-  private static final String NODE_NAME = "valores_principales";
+	private static final String NODE_NAME = "valores_principales";
 
   @Override
   public List<Dollar> extractData(

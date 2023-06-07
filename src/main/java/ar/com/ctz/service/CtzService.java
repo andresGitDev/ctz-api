@@ -7,20 +7,28 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import ar.com.ctz.entity.Dollar;
+import ar.com.ctz.entity.DollarTypes;
 import ar.com.ctz.repository.CtzRepository;
 
 @Service
 public class CtzService {
 
-	  @Value("${dolar.url}")
-	  private String dollarUrl;
-	  
-	  @Autowired
-	  private CtzRepository ctzRepository;
-	  
-	  public List<Dollar> getDollarPrices() {
-	    return ctzRepository.getPrices(dollarUrl);
-	  }
+	@Value("${dolar.url}")
+	private String dollarUrl;
 
+	@Autowired
+	private CtzRepository ctzRepository;
+
+	public List<Dollar> getDollarPrices() {
+		return ctzRepository.getPrices(dollarUrl);
+	}
+
+	public List<DollarTypes> getDollarTypes() {
+		return ctzRepository.getTypes(dollarUrl);
+	}
+
+	public Dollar getDollarSymbol(String symbol) {
+		return ctzRepository.getSymbol(dollarUrl, symbol);
+	}
 
 }
