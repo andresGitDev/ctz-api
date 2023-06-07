@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @JacksonStdImpl
 @NoArgsConstructor
 @AllArgsConstructor
-public class QrCodeGenerationRequestDto {
+public class CtzGenerationRequestDto {
 
 	@Schema(description = "Title of your message", required = true, example = "Important message")
 	@NotBlank(message = "title must not be empty")

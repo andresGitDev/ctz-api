@@ -19,25 +19,25 @@ import org.springframework.web.multipart.MultipartFile;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.WriterException;
 
-import ar.com.ctz.dto.QrCodeGenerationRequestDto;
-import ar.com.ctz.service.QrCodeService;
+import ar.com.ctz.dto.CtzGenerationRequestDto;
+import ar.com.ctz.service.QrService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
-public class QrCodeController {
+public class QrController {
 
-	private final QrCodeService qrCodeService;
+	private final QrService qrService;
 
 	@PostMapping(value = "/generateData")
 	@ResponseStatus(value = HttpStatus.OK)
 	@Operation(summary = "Returns a .png QR code with provided information decoded inside")
 	public void qrCodeGenerationHandler(
-			@Valid @RequestBody(required = true) final QrCodeGenerationRequestDto qrCodeGenerationRequestDto,
+			@Valid @RequestBody(required = true) final CtzGenerationRequestDto qrCodeGenerationRequestDto,
 			final HttpServletResponse httpServletResponse) throws IOException, WriterException {
-		qrCodeService.generateData(qrCodeGenerationRequestDto, httpServletResponse);
+		qrService.generateData(qrCodeGenerationRequestDto, httpServletResponse);
 	}
 
 	@GetMapping(value = "/qrCode")
@@ -45,7 +45,7 @@ public class QrCodeController {
 	@Operation(summary = "Returns a .png QR code with provided information decoded inside")
 	public void qrCodeGeneration(final HttpServletResponse httpServletResponse, String data)
 			throws IOException, WriterException {
-		qrCodeService.qrCode(data, httpServletResponse);
+		qrService.qrCode(data, httpServletResponse);
 	}
 
 	@PutMapping(value = "/read", consumes = "multipart/form-data")
@@ -54,7 +54,7 @@ public class QrCodeController {
 	public ResponseEntity<?> read(
 			@Parameter(description = ".png image of QR code generated through this portal") @RequestParam(value = "file", required = true) MultipartFile file)
 			throws IOException, NotFoundException {
-		return qrCodeService.read(file);
+		return qrService.read(file);
 	}
 
 }
