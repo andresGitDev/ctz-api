@@ -1,4 +1,4 @@
-package ar.com.ctz.component;
+package ar.com.wsapi.component;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Component;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import ar.com.ctz.entity.Dollar;
-import ar.com.ctz.entity.DollarCreator;
-import ar.com.ctz.shared.AbstractResponseExtractor;
+import ar.com.wsapi.entity.Dollar;
+import ar.com.wsapi.entity.DollarCreator;
+import ar.com.wsapi.shared.AbstractResponseExtractor;
 
 @Component
 public class CtzExtractor extends AbstractResponseExtractor<Dollar> {

@@ -1,4 +1,4 @@
-package ar.com.ctz.dto;
+package ar.com.wsapi.dto;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

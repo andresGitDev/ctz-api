@@ -1,4 +1,4 @@
-package ar.com.ctz.repository;
+package ar.com.wsapi.repository;
 
 import static org.springframework.http.HttpMethod.GET;
 
@@ -14,9 +14,9 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RequestCallback;
 import org.springframework.web.client.RestTemplate;
 
-import ar.com.ctz.component.CtzExtractor;
-import ar.com.ctz.entity.Dollar;
-import ar.com.ctz.entity.DollarTypes;
+import ar.com.wsapi.component.CtzExtractor;
+import ar.com.wsapi.entity.Dollar;
+import ar.com.wsapi.entity.DollarTypes;
 
 @Repository
 public class CtzRepository {

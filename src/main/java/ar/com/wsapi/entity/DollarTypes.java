@@ -1,4 +1,4 @@
-package ar.com.ctz.entity;
+package ar.com.wsapi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

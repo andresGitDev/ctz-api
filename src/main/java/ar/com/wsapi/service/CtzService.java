@@ -1,4 +1,4 @@
-package ar.com.ctz.service;
+package ar.com.wsapi.service;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import ar.com.ctz.entity.Dollar;
-import ar.com.ctz.entity.DollarTypes;
-import ar.com.ctz.repository.CtzRepository;
+import ar.com.wsapi.entity.Dollar;
+import ar.com.wsapi.entity.DollarTypes;
+import ar.com.wsapi.repository.CtzRepository;
 
 @Service
 public class CtzService {

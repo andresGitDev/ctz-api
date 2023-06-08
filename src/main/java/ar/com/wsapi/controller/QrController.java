@@ -1,4 +1,4 @@
-package ar.com.ctz.controller;
+package ar.com.wsapi.controller;
 
 import java.io.IOException;
 
@@ -19,8 +19,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.WriterException;
 
-import ar.com.ctz.dto.CtzGenerationRequestDto;
-import ar.com.ctz.service.QrService;
+import ar.com.wsapi.dto.CtzGenerationRequestDto;
+import ar.com.wsapi.service.QrService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.AllArgsConstructor;

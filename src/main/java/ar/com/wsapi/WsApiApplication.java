@@ -1,13 +1,13 @@
-package ar.com.ctz;
+package ar.com.wsapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CtzApiApplication {
+public class WsApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CtzApiApplication.class, args);
+		SpringApplication.run(WsApiApplication.class, args);
 	}
 
 }

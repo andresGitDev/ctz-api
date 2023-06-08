@@ -1,5 +1,5 @@
 
-package ar.com.ctz.configuration.properties;
+package ar.com.wsapi.configuration.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

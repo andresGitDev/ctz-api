@@ -1,4 +1,4 @@
-package ar.com.ctz.controller;
+package ar.com.wsapi.controller;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import ar.com.ctz.entity.Dollar;
-import ar.com.ctz.entity.DollarTypes;
-import ar.com.ctz.service.CtzService;
+import ar.com.wsapi.entity.Dollar;
+import ar.com.wsapi.entity.DollarTypes;
+import ar.com.wsapi.service.CtzService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.AllArgsConstructor;
 

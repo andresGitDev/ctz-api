@@ -1,4 +1,4 @@
-package ar.com.ctz.exception.handler;
+package ar.com.wsapi.exception.handler;
 
 import java.time.LocalDateTime;
 import java.util.List;

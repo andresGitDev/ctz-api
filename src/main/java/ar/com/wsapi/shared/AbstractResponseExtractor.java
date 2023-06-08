@@ -1,4 +1,4 @@
-package ar.com.ctz.shared;
+package ar.com.wsapi.shared;
 
 import java.io.IOException;
 import java.io.InputStream;

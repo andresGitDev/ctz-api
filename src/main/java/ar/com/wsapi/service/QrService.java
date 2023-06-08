@@ -1,4 +1,4 @@
-package ar.com.ctz.service;
+package ar.com.wsapi.service;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedOutputStream;
@@ -26,7 +26,7 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeWriter;
 
-import ar.com.ctz.dto.CtzGenerationRequestDto;
+import ar.com.wsapi.dto.CtzGenerationRequestDto;
 import lombok.var;
 
 
