@@ -43,5 +43,15 @@
     "name": "dolar.url",
     "type": "java.lang.String",
     "description": "A description for 'dolar.url'"
+  },
+  {
+    "name": "afip.homo",
+    "type": "java.lang.String",
+    "description": "A description for 'afip.homo'"
+  },
+  {
+    "name": "afip.prod",
+    "type": "java.lang.String",
+    "description": "A description for 'afip.prod'"
   }
 ]}
